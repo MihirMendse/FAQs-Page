@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
     const currentUrl = window.location.href;
     console.log('Current URL:', currentUrl);
     console.log(typeof(currentUrl));
-    if (currentUrl.includes("host")) {
+    if (currentUrl.includes("micro-frontend-host")) {
       this.remoteAccess = false;
       this.hostAccess = true;
       console.log("The URL contains 'host'.");
