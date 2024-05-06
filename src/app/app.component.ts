@@ -32,7 +32,7 @@ export class AppComponent implements OnInit{
     if (currentUrl.includes("micro-frontend-host")) {
       this.remoteAccess = false;
       this.hostAccess = true;
-      console.log("The URL contains 'host'.");
+      console.log("The URL contains 'micro-frontend-host'.");
     }
     
   }
