@@ -26,6 +26,8 @@ export class AppComponent implements OnInit{
 
     const currentUrl = window.location.href;
     console.log('Current URL:', currentUrl);
+    console.log(typeof(currentUrl));
+    
   }
 
 
