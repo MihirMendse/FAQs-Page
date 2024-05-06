@@ -23,6 +23,9 @@ export class AppComponent implements OnInit{
       email: ['', [Validators.required, Validators.email]],
       question: ['', [Validators.required, Validators.minLength(6)]]
     });
+
+    const currentUrl = window.location.href;
+    console.log('Current URL:', currentUrl);
   }
 
 
