@@ -15,8 +15,8 @@ export class AppComponent implements OnInit{
   title = 'mfe2';
   form!: FormGroup;
   submittedData: SubmittedDataType[] = [];
-  hostAccess:boolean = false;
-  remoteAccess:boolean = true;
+  // hostAccess:boolean = false;
+  // remoteAccess:boolean = true;
 
   constructor(private fb: FormBuilder) { }
 
@@ -26,14 +26,14 @@ export class AppComponent implements OnInit{
       question: ['', [Validators.required, Validators.minLength(6)]]
     });
 
-    const currentUrl = window.location.href;
-    console.log('Current URL:', currentUrl);
-    console.log(typeof(currentUrl));
-    if (currentUrl.includes("micro-frontend-host")) {
-      this.remoteAccess = false;
-      this.hostAccess = true;
-      console.log("The URL contains 'micro-frontend-host'.");
-    }
+    // const currentUrl = window.location.href;
+    // console.log('Current URL:', currentUrl);
+    // console.log(typeof(currentUrl));
+    // if (currentUrl.includes("micro-frontend-host")) {
+    //   this.remoteAccess = false;
+    //   this.hostAccess = true;
+    //   console.log("The URL contains 'micro-frontend-host'.");
+    // }
     
   }
 
